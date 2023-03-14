@@ -3,6 +3,6 @@ Prebuilt Clang taken from The Chromium Projects
 
 ## How to use
 ```shell
-$ export PATH=$(pwd):PATH
+$ export PATH=$(pwd)/bin:PATH
 $ clang -v
 ```
