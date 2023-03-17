@@ -72,6 +72,7 @@
   __interceptor_accept;
   __interceptor_accept4;
   __interceptor_aligned_alloc;
+  __interceptor_argp_parse;
   __interceptor_asctime;
   __interceptor_asctime_r;
   __interceptor_asprintf;
@@ -1370,6 +1371,7 @@
   accept;
   accept4;
   aligned_alloc;
+  argp_parse;
   asctime;
   asctime_r;
   asprintf;
