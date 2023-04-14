@@ -139,7 +139,6 @@
   __interceptor_fwrite;
   __interceptor_get_current_dir_name;
   __interceptor_getaddrinfo;
-  __interceptor_getcontext;
   __interceptor_getcwd;
   __interceptor_getdelim;
   __interceptor_getgrent;
@@ -220,6 +219,7 @@
   __interceptor_localtime_r;
   __interceptor_longjmp;
   __interceptor_lrand48_r;
+  __interceptor_makecontext;
   __interceptor_mallinfo;
   __interceptor_malloc;
   __interceptor_malloc_stats;
@@ -557,6 +557,7 @@
   __sanitizer_dump_trace_pc_guard_coverage;
   __sanitizer_finish_switch_fiber;
   __sanitizer_free_hook;
+  __sanitizer_get_allocated_begin;
   __sanitizer_get_allocated_size;
   __sanitizer_get_current_allocated_bytes;
   __sanitizer_get_estimated_allocated_size;
@@ -1347,7 +1348,6 @@
   fwrite;
   get_current_dir_name;
   getaddrinfo;
-  getcontext;
   getcwd;
   getdelim;
   getgrent;
@@ -1428,6 +1428,7 @@
   localtime_r;
   longjmp;
   lrand48_r;
+  makecontext;
   mallinfo;
   malloc;
   malloc_stats;
