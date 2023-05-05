@@ -35,7 +35,6 @@
 #include <stdint.h>
 
 #include <arm_bf16.h>
-typedef __bf16 bfloat16_t;
 typedef float float32_t;
 typedef __fp16 float16_t;
 #ifdef __aarch64__

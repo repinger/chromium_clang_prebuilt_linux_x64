@@ -37,7 +37,6 @@ typedef __SVFloat16_t svfloat16_t;
 
 typedef __SVBFloat16_t svbfloat16_t;
 #include <arm_bf16.h>
-typedef __bf16 bfloat16_t;
 typedef __SVFloat32_t svfloat32_t;
 typedef __SVFloat64_t svfloat64_t;
 typedef __clang_svint8x2_t svint8x2_t;
