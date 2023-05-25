@@ -357,6 +357,8 @@
   __interceptor_pthread_setcanceltype;
   __interceptor_pthread_setname_np;
   __interceptor_pthread_sigmask;
+  __interceptor_pthread_timedjoin_np;
+  __interceptor_pthread_tryjoin_np;
   __interceptor_ptrace;
   __interceptor_ptsname;
   __interceptor_ptsname_r;
@@ -1652,6 +1654,8 @@
   pthread_setcanceltype;
   pthread_setname_np;
   pthread_sigmask;
+  pthread_timedjoin_np;
+  pthread_tryjoin_np;
   ptrace;
   ptsname;
   ptsname_r;

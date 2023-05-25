@@ -284,6 +284,8 @@
   __interceptor_pthread_condattr_getclock;
   __interceptor_pthread_condattr_getpshared;
   __interceptor_pthread_create;
+  __interceptor_pthread_detach;
+  __interceptor_pthread_exit;
   __interceptor_pthread_getaffinity_np;
   __interceptor_pthread_getcpuclockid;
   __interceptor_pthread_getname_np;
@@ -301,6 +303,8 @@
   __interceptor_pthread_setcanceltype;
   __interceptor_pthread_setname_np;
   __interceptor_pthread_sigmask;
+  __interceptor_pthread_timedjoin_np;
+  __interceptor_pthread_tryjoin_np;
   __interceptor_ptrace;
   __interceptor_ptsname;
   __interceptor_ptsname_r;
@@ -1489,6 +1493,8 @@
   pthread_condattr_getclock;
   pthread_condattr_getpshared;
   pthread_create;
+  pthread_detach;
+  pthread_exit;
   pthread_getaffinity_np;
   pthread_getcpuclockid;
   pthread_getname_np;
@@ -1506,6 +1512,8 @@
   pthread_setcanceltype;
   pthread_setname_np;
   pthread_sigmask;
+  pthread_timedjoin_np;
+  pthread_tryjoin_np;
   ptrace;
   ptsname;
   ptsname_r;

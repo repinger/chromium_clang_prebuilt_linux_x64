@@ -167,6 +167,7 @@ typedef __rvv_int32mf2_t vint32mf2_t;
 typedef __rvv_uint32mf2_t vuint32mf2_t;
 typedef __rvv_int32m1_t vint32m1_t;
 typedef __rvv_uint32m1_t vuint32m1_t;
+typedef __rvv_int32m1x2_t vint32m1x2_t;
 typedef __rvv_int32m2_t vint32m2_t;
 typedef __rvv_uint32m2_t vuint32m2_t;
 typedef __rvv_int32m4_t vint32m4_t;
