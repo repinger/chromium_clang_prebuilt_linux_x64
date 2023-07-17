@@ -79,6 +79,8 @@ typedef __clang_svboolx4_t  svboolx4_t;
 typedef __clang_svbfloat16x2_t svbfloat16x2_t;
 typedef __clang_svbfloat16x3_t svbfloat16x3_t;
 typedef __clang_svbfloat16x4_t svbfloat16x4_t;
+typedef __SVCount_t svcount_t;
+
 enum svpattern
 {
   SV_POW2 = 0,
@@ -23897,6 +23899,14 @@ __ai __attribute__((__clang_arm_builtin_alias(__builtin_sve_svclamp_u64)))
 svuint64_t svclamp_u64(svuint64_t, svuint64_t, svuint64_t);
 __ai __attribute__((__clang_arm_builtin_alias(__builtin_sve_svclamp_u16)))
 svuint16_t svclamp_u16(svuint16_t, svuint16_t, svuint16_t);
+__ai __attribute__((__clang_arm_builtin_alias(__builtin_sve_svptrue_c8)))
+svcount_t svptrue_c8(void);
+__ai __attribute__((__clang_arm_builtin_alias(__builtin_sve_svptrue_c32)))
+svcount_t svptrue_c32(void);
+__ai __attribute__((__clang_arm_builtin_alias(__builtin_sve_svptrue_c64)))
+svcount_t svptrue_c64(void);
+__ai __attribute__((__clang_arm_builtin_alias(__builtin_sve_svptrue_c16)))
+svcount_t svptrue_c16(void);
 __aio __attribute__((__clang_arm_builtin_alias(__builtin_sve_svclamp_f64)))
 svfloat64_t svclamp(svfloat64_t, svfloat64_t, svfloat64_t);
 __aio __attribute__((__clang_arm_builtin_alias(__builtin_sve_svclamp_f32)))
