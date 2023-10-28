@@ -630,11 +630,11 @@ void svusmopa_za64_m(uint64_t, svbool_t, svbool_t, svuint16_t, svint16_t);
 __aio __attribute__((__clang_arm_builtin_alias(__builtin_sme_svusmops_za64_u16_m), arm_streaming, arm_shared_za))
 void svusmops_za64_m(uint64_t, svbool_t, svbool_t, svuint16_t, svint16_t);
 __ai __attribute__((__clang_arm_builtin_alias(__builtin_sme_svldr_vnum_za), arm_streaming_compatible, arm_shared_za))
-void svldr_vnum_za(uint32_t, void const *, uint64_t);
+void svldr_vnum_za(uint32_t, void const *, int64_t);
 __ai __attribute__((__clang_arm_builtin_alias(__builtin_sme_svldr_za), arm_streaming_compatible, arm_shared_za))
 void svldr_za(uint32_t, void const *);
 __ai __attribute__((__clang_arm_builtin_alias(__builtin_sme_svstr_vnum_za), arm_streaming_compatible, arm_shared_za, arm_preserves_za))
-void svstr_vnum_za(uint32_t, void *, uint64_t);
+void svstr_vnum_za(uint32_t, void *, int64_t);
 __ai __attribute__((__clang_arm_builtin_alias(__builtin_sme_svstr_za), arm_streaming_compatible, arm_shared_za, arm_preserves_za))
 void svstr_za(uint32_t, void *);
 #ifdef __cplusplus
