@@ -14,7 +14,7 @@
 #if !defined(__LITTLE_ENDIAN__)
 #error "Big endian is currently not supported for arm_sme_draft_spec_subject_to_change.h"
 #endif
-#include <arm_sve.h> 
+#include <arm_sve.h>
 
 /* Function attributes */
 #define __ai static __inline__ __attribute__((__always_inline__, __nodebug__))
@@ -769,6 +769,22 @@ __ai __attribute__((__clang_arm_builtin_alias(__builtin_sme_svadd_za32_f32_vg1x4
 void svadd_za32_f32_vg1x4(uint32_t, svfloat32x4_t);
 __ai __attribute__((__clang_arm_builtin_alias(__builtin_sme_svadd_za32_s32_vg1x4), arm_streaming, arm_shared_za))
 void svadd_za32_s32_vg1x4(uint32_t, svint32x4_t);
+__ai __attribute__((__clang_arm_builtin_alias(__builtin_sme_svbmopa_za32_u32_m), arm_streaming, arm_shared_za))
+void svbmopa_za32_u32_m(uint64_t, svbool_t, svbool_t, svuint32_t, svuint32_t);
+__ai __attribute__((__clang_arm_builtin_alias(__builtin_sme_svbmopa_za32_s32_m), arm_streaming, arm_shared_za))
+void svbmopa_za32_s32_m(uint64_t, svbool_t, svbool_t, svint32_t, svint32_t);
+__ai __attribute__((__clang_arm_builtin_alias(__builtin_sme_svbmops_za32_u32_m), arm_streaming, arm_shared_za))
+void svbmops_za32_u32_m(uint64_t, svbool_t, svbool_t, svuint32_t, svuint32_t);
+__ai __attribute__((__clang_arm_builtin_alias(__builtin_sme_svbmops_za32_s32_m), arm_streaming, arm_shared_za))
+void svbmops_za32_s32_m(uint64_t, svbool_t, svbool_t, svint32_t, svint32_t);
+__ai __attribute__((__clang_arm_builtin_alias(__builtin_sme_svmopa_za32_s16_m), arm_streaming, arm_shared_za))
+void svmopa_za32_s16_m(uint64_t, svbool_t, svbool_t, svint16_t, svint16_t);
+__ai __attribute__((__clang_arm_builtin_alias(__builtin_sme_svmopa_za32_u16_m), arm_streaming, arm_shared_za))
+void svmopa_za32_u16_m(uint64_t, svbool_t, svbool_t, svuint16_t, svuint16_t);
+__ai __attribute__((__clang_arm_builtin_alias(__builtin_sme_svmops_za32_s16_m), arm_streaming, arm_shared_za))
+void svmops_za32_s16_m(uint64_t, svbool_t, svbool_t, svint16_t, svint16_t);
+__ai __attribute__((__clang_arm_builtin_alias(__builtin_sme_svmops_za32_u16_m), arm_streaming, arm_shared_za))
+void svmops_za32_u16_m(uint64_t, svbool_t, svbool_t, svuint16_t, svuint16_t);
 __ai __attribute__((__clang_arm_builtin_alias(__builtin_sme_svsub_write_single_za32_u32_vg1x2), arm_streaming, arm_shared_za))
 void svsub_write_single_za32_u32_vg1x2(uint32_t, svuint32x2_t, svuint32_t);
 __ai __attribute__((__clang_arm_builtin_alias(__builtin_sme_svsub_write_single_za32_s32_vg1x2), arm_streaming, arm_shared_za))
@@ -825,6 +841,22 @@ __aio __attribute__((__clang_arm_builtin_alias(__builtin_sme_svadd_za32_f32_vg1x
 void svadd_za32_vg1x4(uint32_t, svfloat32x4_t);
 __aio __attribute__((__clang_arm_builtin_alias(__builtin_sme_svadd_za32_s32_vg1x4), arm_streaming, arm_shared_za))
 void svadd_za32_vg1x4(uint32_t, svint32x4_t);
+__aio __attribute__((__clang_arm_builtin_alias(__builtin_sme_svbmopa_za32_u32_m), arm_streaming, arm_shared_za))
+void svbmopa_za32_m(uint64_t, svbool_t, svbool_t, svuint32_t, svuint32_t);
+__aio __attribute__((__clang_arm_builtin_alias(__builtin_sme_svbmopa_za32_s32_m), arm_streaming, arm_shared_za))
+void svbmopa_za32_m(uint64_t, svbool_t, svbool_t, svint32_t, svint32_t);
+__aio __attribute__((__clang_arm_builtin_alias(__builtin_sme_svbmops_za32_u32_m), arm_streaming, arm_shared_za))
+void svbmops_za32_m(uint64_t, svbool_t, svbool_t, svuint32_t, svuint32_t);
+__aio __attribute__((__clang_arm_builtin_alias(__builtin_sme_svbmops_za32_s32_m), arm_streaming, arm_shared_za))
+void svbmops_za32_m(uint64_t, svbool_t, svbool_t, svint32_t, svint32_t);
+__aio __attribute__((__clang_arm_builtin_alias(__builtin_sme_svmopa_za32_s16_m), arm_streaming, arm_shared_za))
+void svmopa_za32_m(uint64_t, svbool_t, svbool_t, svint16_t, svint16_t);
+__aio __attribute__((__clang_arm_builtin_alias(__builtin_sme_svmopa_za32_u16_m), arm_streaming, arm_shared_za))
+void svmopa_za32_m(uint64_t, svbool_t, svbool_t, svuint16_t, svuint16_t);
+__aio __attribute__((__clang_arm_builtin_alias(__builtin_sme_svmops_za32_s16_m), arm_streaming, arm_shared_za))
+void svmops_za32_m(uint64_t, svbool_t, svbool_t, svint16_t, svint16_t);
+__aio __attribute__((__clang_arm_builtin_alias(__builtin_sme_svmops_za32_u16_m), arm_streaming, arm_shared_za))
+void svmops_za32_m(uint64_t, svbool_t, svbool_t, svuint16_t, svuint16_t);
 __aio __attribute__((__clang_arm_builtin_alias(__builtin_sme_svsub_write_single_za32_u32_vg1x2), arm_streaming, arm_shared_za))
 void svsub_write_za32_vg1x2(uint32_t, svuint32x2_t, svuint32_t);
 __aio __attribute__((__clang_arm_builtin_alias(__builtin_sme_svsub_write_single_za32_s32_vg1x2), arm_streaming, arm_shared_za))
