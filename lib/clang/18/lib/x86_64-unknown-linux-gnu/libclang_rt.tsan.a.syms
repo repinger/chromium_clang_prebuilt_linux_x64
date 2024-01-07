@@ -330,6 +330,7 @@
   ___interceptor_pthread_getschedparam;
   ___interceptor_pthread_join;
   ___interceptor_pthread_kill;
+  ___interceptor_pthread_mutex_clocklock;
   ___interceptor_pthread_mutex_destroy;
   ___interceptor_pthread_mutex_init;
   ___interceptor_pthread_mutex_lock;
@@ -904,6 +905,7 @@
   __interceptor_pthread_getschedparam;
   __interceptor_pthread_join;
   __interceptor_pthread_kill;
+  __interceptor_pthread_mutex_clocklock;
   __interceptor_pthread_mutex_destroy;
   __interceptor_pthread_mutex_init;
   __interceptor_pthread_mutex_lock;
@@ -1399,6 +1401,7 @@
   __interceptor_trampoline_pthread_getschedparam;
   __interceptor_trampoline_pthread_join;
   __interceptor_trampoline_pthread_kill;
+  __interceptor_trampoline_pthread_mutex_clocklock;
   __interceptor_trampoline_pthread_mutex_destroy;
   __interceptor_trampoline_pthread_mutex_init;
   __interceptor_trampoline_pthread_mutex_lock;
@@ -2767,6 +2770,7 @@
   pthread_getschedparam;
   pthread_join;
   pthread_kill;
+  pthread_mutex_clocklock;
   pthread_mutex_destroy;
   pthread_mutex_init;
   pthread_mutex_lock;
