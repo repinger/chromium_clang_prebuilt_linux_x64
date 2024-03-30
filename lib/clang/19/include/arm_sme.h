@@ -16,6 +16,8 @@
 #endif
 #include <arm_sve.h>
 
+#include <stddef.h>
+
 /* Function attributes */
 #define __ai static __inline__ __attribute__((__always_inline__, __nodebug__))
 
@@ -38,6 +40,11 @@ __ai bool __arm_in_streaming_mode(void) __arm_streaming_compatible {
   __builtin_arm_get_sme_state(&x0, &x1);
   return x0 & 1;
 }
+
+void *__arm_sc_memcpy(void *dest, const void *src, size_t n) __arm_streaming_compatible;
+void *__arm_sc_memmove(void *dest, const void *src, size_t n) __arm_streaming_compatible;
+void *__arm_sc_memset(void *s, int c, size_t n) __arm_streaming_compatible;
+void *__arm_sc_memchr(void *s, int c, size_t n) __arm_streaming_compatible;
 
 __ai __attribute__((target("sme"))) void svundef_za(void) __arm_streaming_compatible __arm_out("za") { }
 
@@ -368,7 +375,7 @@ void svwrite_ver_za8_s8_m(uint64_t, uint32_t, svbool_t, svint8_t);
 __ai __attribute__((__clang_arm_builtin_alias(__builtin_sme_svzero_mask_za)))
 void svzero_mask_za(uint64_t);
 __ai __attribute__((__clang_arm_builtin_alias(__builtin_sme_svzero_za)))
-void svzero_za();
+void svzero_za(void);
 __aio __attribute__((__clang_arm_builtin_alias(__builtin_sme_svaddha_za32_u32_m)))
 void svaddha_za32_m(uint64_t, svbool_t, svbool_t, svuint32_t);
 __aio __attribute__((__clang_arm_builtin_alias(__builtin_sme_svaddha_za32_s32_m)))

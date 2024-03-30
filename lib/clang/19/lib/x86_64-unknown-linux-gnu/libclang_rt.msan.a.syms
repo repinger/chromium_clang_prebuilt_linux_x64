@@ -2173,6 +2173,7 @@
   __sanitizer_syscall_post_impl_fchdir;
   __sanitizer_syscall_post_impl_fchmod;
   __sanitizer_syscall_post_impl_fchmodat;
+  __sanitizer_syscall_post_impl_fchmodat2;
   __sanitizer_syscall_post_impl_fchown;
   __sanitizer_syscall_post_impl_fchownat;
   __sanitizer_syscall_post_impl_fcntl;
@@ -2498,6 +2499,7 @@
   __sanitizer_syscall_pre_impl_fchdir;
   __sanitizer_syscall_pre_impl_fchmod;
   __sanitizer_syscall_pre_impl_fchmodat;
+  __sanitizer_syscall_pre_impl_fchmodat2;
   __sanitizer_syscall_pre_impl_fchown;
   __sanitizer_syscall_pre_impl_fchownat;
   __sanitizer_syscall_pre_impl_fcntl;
