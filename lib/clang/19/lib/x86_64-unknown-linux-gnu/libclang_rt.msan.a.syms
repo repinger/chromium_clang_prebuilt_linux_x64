@@ -2192,6 +2192,7 @@
   __sanitizer_syscall_post_impl_fstatfs64;
   __sanitizer_syscall_post_impl_fsync;
   __sanitizer_syscall_post_impl_ftruncate;
+  __sanitizer_syscall_post_impl_futex;
   __sanitizer_syscall_post_impl_futimesat;
   __sanitizer_syscall_post_impl_get_mempolicy;
   __sanitizer_syscall_post_impl_get_robust_list;
@@ -2518,6 +2519,7 @@
   __sanitizer_syscall_pre_impl_fstatfs64;
   __sanitizer_syscall_pre_impl_fsync;
   __sanitizer_syscall_pre_impl_ftruncate;
+  __sanitizer_syscall_pre_impl_futex;
   __sanitizer_syscall_pre_impl_futimesat;
   __sanitizer_syscall_pre_impl_get_mempolicy;
   __sanitizer_syscall_pre_impl_get_robust_list;

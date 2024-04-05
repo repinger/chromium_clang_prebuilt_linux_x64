@@ -147,8 +147,6 @@
   ___interceptor_frexpf;
   ___interceptor_frexpl;
   ___interceptor_fscanf;
-  ___interceptor_fstat;
-  ___interceptor_fstat64;
   ___interceptor_fstatfs;
   ___interceptor_fstatfs64;
   ___interceptor_fstatvfs;
@@ -722,8 +720,6 @@
   __interceptor_frexpf;
   __interceptor_frexpl;
   __interceptor_fscanf;
-  __interceptor_fstat;
-  __interceptor_fstat64;
   __interceptor_fstatfs;
   __interceptor_fstatfs64;
   __interceptor_fstatvfs;
@@ -1218,8 +1214,6 @@
   __interceptor_trampoline_frexpf;
   __interceptor_trampoline_frexpl;
   __interceptor_trampoline_fscanf;
-  __interceptor_trampoline_fstat;
-  __interceptor_trampoline_fstat64;
   __interceptor_trampoline_fstatfs;
   __interceptor_trampoline_fstatfs64;
   __interceptor_trampoline_fstatvfs;
@@ -1857,6 +1851,7 @@
   __sanitizer_syscall_post_impl_fstatfs64;
   __sanitizer_syscall_post_impl_fsync;
   __sanitizer_syscall_post_impl_ftruncate;
+  __sanitizer_syscall_post_impl_futex;
   __sanitizer_syscall_post_impl_futimesat;
   __sanitizer_syscall_post_impl_get_mempolicy;
   __sanitizer_syscall_post_impl_get_robust_list;
@@ -2183,6 +2178,7 @@
   __sanitizer_syscall_pre_impl_fstatfs64;
   __sanitizer_syscall_pre_impl_fsync;
   __sanitizer_syscall_pre_impl_ftruncate;
+  __sanitizer_syscall_pre_impl_futex;
   __sanitizer_syscall_pre_impl_futimesat;
   __sanitizer_syscall_pre_impl_get_mempolicy;
   __sanitizer_syscall_pre_impl_get_robust_list;
@@ -2597,8 +2593,6 @@
   frexpf;
   frexpl;
   fscanf;
-  fstat;
-  fstat64;
   fstatfs;
   fstatfs64;
   fstatvfs;
