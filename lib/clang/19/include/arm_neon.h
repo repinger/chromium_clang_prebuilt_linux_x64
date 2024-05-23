@@ -32538,7 +32538,7 @@ int32x4_t __reint1_136 = __noswap_vshll_n_s16(*(int16x4_t *) &__reint_136, 16);
 __ai __attribute__((target("bf16"))) float32_t vcvtah_f32_bf16(bfloat16_t __p0) {
   float32_t __ret;
 bfloat16_t __reint = __p0;
-int32_t __reint1 = *(int32_t *) &__reint << 16;
+int32_t __reint1 = (int32_t)(*(int16_t *) &__reint) << 16;
   __ret = *(float32_t *) &__reint1;
   return __ret;
 }
