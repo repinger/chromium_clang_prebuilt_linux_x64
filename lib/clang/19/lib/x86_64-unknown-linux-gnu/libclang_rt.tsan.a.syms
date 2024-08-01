@@ -157,6 +157,7 @@
   ___interceptor_getaddrinfo;
   ___interceptor_getcwd;
   ___interceptor_getdelim;
+  ___interceptor_getentropy;
   ___interceptor_getgrent;
   ___interceptor_getgrent_r;
   ___interceptor_getgrgid;
@@ -197,6 +198,7 @@
   ___interceptor_getpwnam_r;
   ___interceptor_getpwuid;
   ___interceptor_getpwuid_r;
+  ___interceptor_getrandom;
   ___interceptor_getresgid;
   ___interceptor_getresuid;
   ___interceptor_getsockname;
@@ -730,6 +732,7 @@
   __interceptor_getaddrinfo;
   __interceptor_getcwd;
   __interceptor_getdelim;
+  __interceptor_getentropy;
   __interceptor_getgrent;
   __interceptor_getgrent_r;
   __interceptor_getgrgid;
@@ -770,6 +773,7 @@
   __interceptor_getpwnam_r;
   __interceptor_getpwuid;
   __interceptor_getpwuid_r;
+  __interceptor_getrandom;
   __interceptor_getresgid;
   __interceptor_getresuid;
   __interceptor_getsockname;
@@ -1224,6 +1228,7 @@
   __interceptor_trampoline_getaddrinfo;
   __interceptor_trampoline_getcwd;
   __interceptor_trampoline_getdelim;
+  __interceptor_trampoline_getentropy;
   __interceptor_trampoline_getgrent;
   __interceptor_trampoline_getgrent_r;
   __interceptor_trampoline_getgrgid;
@@ -1264,6 +1269,7 @@
   __interceptor_trampoline_getpwnam_r;
   __interceptor_trampoline_getpwuid;
   __interceptor_trampoline_getpwuid_r;
+  __interceptor_trampoline_getrandom;
   __interceptor_trampoline_getresgid;
   __interceptor_trampoline_getresuid;
   __interceptor_trampoline_getsockname;
@@ -2603,6 +2609,7 @@
   getaddrinfo;
   getcwd;
   getdelim;
+  getentropy;
   getgrent;
   getgrent_r;
   getgrgid;
@@ -2643,6 +2650,7 @@
   getpwnam_r;
   getpwuid;
   getpwuid_r;
+  getrandom;
   getresgid;
   getresuid;
   getsockname;
